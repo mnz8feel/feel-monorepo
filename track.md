@@ -24,13 +24,30 @@
     # installed from the workspace
     pnpm i api-center -F general # "api-center": "workspace:^0.0.1" in packages\general\package.json
 
+3
+
+    # init feel-next
+    pnpm i next react react-dom -F
+    add scripts to feel-next package.json
+
+        "scripts": {
+            "dev": "next dev",
+            "build": "next build",
+            "start": "next start",
+            "lint": "next lint"
+        }
+
+    # add typescript
+    create an empty `tsconfig.json` file in the root folder
+    lerna --scope feel-next run dev
+
+version
+
+    pnpm 7.28.0
+
 pnpm-workspace.yaml
 
 ```
 packages:
     - 'packages/*'
 ```
-
-version
-
-    pnpm 7.28.0
