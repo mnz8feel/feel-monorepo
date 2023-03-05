@@ -35,6 +35,7 @@
         "start": "next start",
         "lint": "next lint"
 
+    add the pages/index.js
     lerna --scope feel-next run dev
     # add typescript
     create an empty `tsconfig.json` file in the root folder
