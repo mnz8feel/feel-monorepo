@@ -47,6 +47,12 @@
     copy files from mark-start/start-nest
     pnpm i
 
+5
+
+    pnpm -F feel-next dev # <=> lerna --scope feel-next run dev
+    # maybe just pnpm is enough
+    remove lerna
+
 version
 
     pnpm 7.28.0
