@@ -43,8 +43,8 @@
 
 4
 
-    # init feel-nest
-    pnpm i @nestjs/core @nestjs/common rxjs reflect-metadata -F feel-nest
+    mkdir feel-nest
+    copy files from mark-start/start-nest
 
 version
 
