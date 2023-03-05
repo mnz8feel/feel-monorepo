@@ -27,7 +27,7 @@
 3
 
     # init feel-next
-    pnpm i next react react-dom -F
+    pnpm i next react react-dom -F feel-next
     add scripts to feel-next package.json
 
         "scripts": {
