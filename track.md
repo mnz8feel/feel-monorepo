@@ -45,7 +45,6 @@
 
     mkdir feel-nest
     copy files from mark-start/start-nest
-    cd to feel-nest
     pnpm i
 
 version
