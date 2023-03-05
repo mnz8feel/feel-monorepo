@@ -30,13 +30,12 @@
     pnpm i next react react-dom -F feel-next
     add scripts to feel-next package.json
 
-        "scripts": {
-            "dev": "next dev",
-            "build": "next build",
-            "start": "next start",
-            "lint": "next lint"
-        }
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
 
+    lerna --scope feel-next run dev
     # add typescript
     create an empty `tsconfig.json` file in the root folder
     lerna --scope feel-next run dev
