@@ -30,3 +30,7 @@ pnpm-workspace.yaml
 packages:
     - 'packages/*'
 ```
+
+version
+
+    pnpm 7.28.0
