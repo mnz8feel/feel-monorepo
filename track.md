@@ -13,8 +13,9 @@
 
 2
 
-    # init general ui-center api-center
-    cd packages\general
+    # init general
+    mkdir packages/general
+    cd packages/general
     pnpm init
 
     # installed from the registry
