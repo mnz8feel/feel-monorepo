@@ -41,6 +41,11 @@
     create an empty `tsconfig.json` file in the feel-next root folder
     lerna --scope feel-next run dev
 
+4
+
+    # init feel-nest
+    pnpm i @nestjs/core @nestjs/common rxjs reflect-metadata -F feel-nest
+
 version
 
     pnpm 7.28.0
