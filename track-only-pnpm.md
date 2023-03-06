@@ -5,57 +5,35 @@
     add package.json
     add pnpm-workspace.yaml
 
-    mkdir try/api -p
-    cd try/api
-    pnpm init
+    mkdir try/api try/general -p
+    pnpm init in two dirs
+
     # root dir
     pnpm i axios -F api
+    pnpm i api -F general --workspace # --workspace 仅添加在 workspace 找到的依赖项。installed from the workspace
+    # pnpm i api -F general # installed from the registry
 
-    mkdir try/general
-    cd try/general
-    pnpm init
-    # root dir 如果没有 pnpm-workspace.yaml, installed from the registry, not installed from the workspace
-    pnpm i api -F general
+2
 
-        no pnpm-workspace.yaml in general's package.json : "api": "^5.0.7"
+    mkdir feel/next feel/nest -p
 
-    mkdir feel/next -p
-    cd feel/next
-    pnpm init
-    # root dir
-    pnpm i next react react-dom -F next
+    copy files from mark-start/start-next
+    change package.json name renamed next
+    remove lock file
 
-    add scripts to next package.json
-
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
-
-    pnpm -F next dev
-    # add typescript
-    create an empty `tsconfig.json` file in the next root folder
-    pnpm -F next dev
-
-    mkdir nest
     copy files from mark-start/start-nest
+    change package.json name renamed nest
+    remove lock file
+
     pnpm i
+    pnpm -F nest start:dev
+    pnpm -F next dev
 
 version
 
     pnpm 7.28.0
     node v16.13.1
     npm 8.1.2
-
-在没有 `pnpm-workspace.yaml` 文件时，依然可以 `pnpm i axios -F api` `pnpm i next react react-dom -F next`
-
-pnpm-workspace.yaml
-
-```
-packages:
-  - 'try/*'
-  - 'feel/*'
-```
 
 package.json
 
@@ -67,6 +45,14 @@ package.json
     "preinstall": "npx only-allow pnpm"
   }
 }
+```
+
+pnpm-workspace.yaml
+
+```
+packages:
+  - 'try/*'
+  - 'feel/*'
 ```
 
 .gitignore
