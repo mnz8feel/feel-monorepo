@@ -29,6 +29,8 @@
     pnpm -F nest start:dev
     pnpm -F next dev
 
+    pnpm --stream -r start
+
 version
 
     pnpm 7.28.0
